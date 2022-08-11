@@ -1,0 +1,39 @@
+.block{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+}
+@keyframes animation {
+    0%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+    15%{
+        height: 115px;
+    }
+    25%{
+        height: 100px;
+        background-color: blue;
+        transform: translate(0, 200px);
+    }
+    50%{
+        height: 100px;
+        background-color: green;
+        transform: translate(200px, 200px);
+    }
+    65%{
+        height: 115px;
+    }
+    75%{
+        height: 50px;
+        background-color: yellow;
+        transform: translate(200px, 0);
+    }
+    100%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+}

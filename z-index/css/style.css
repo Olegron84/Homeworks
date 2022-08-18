@@ -1,0 +1,20 @@
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.box:nth-child(1){
+    background-color: red;
+}
+.box:nth-child(2){
+    z-index: 2;
+    top: -100px;
+    left: 120px;
+    background-color: blue;
+}
+.box:nth-child(3){
+    top: -200px;
+    left: 250px;
+    background-color: green;
+}
+

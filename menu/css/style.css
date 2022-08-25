@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+.menu{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-143px,0);
+    height: 100vh;
+    background-color: grey;
+    padding: 30px 10px 10px 30px;
+    transition-duration: 0.5s;
+}
+.menu:hover{
+    transform: translate(0,0);
+}
+.menu:hover .menu__text{
+    opacity: 0;
+}
+.menu__text{
+    cursor: pointer;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+.menu__text>p{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    
+    writing-mode: vertical-rl;
+}
+.menu__elements:not(:last-child){
+    margin-bottom: 15px;
+}
+.menu__links{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+.menu__links::before{
+    padding-right: 10px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://w7.pngwing.com/pngs/959/696/png-transparent-green-check-check-mark-tick-tick-angle-leaf-plant-stem-thumbnail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu__links:hover{
+    color: yellow;
+}
